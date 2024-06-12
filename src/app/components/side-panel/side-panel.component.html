@@ -1,0 +1,29 @@
+<div class="w-full h-auto bg-gray-100 flex flex-col items-center">
+  <p class="uppercase mt-5 font-medium mb-2">categories</p>
+  <div class="accordion-outer w-full p-2" >
+
+    <div class="relative w-70 overflow-hidden" *ngFor="let mainCategory of sectionsList?.sections">
+
+      <input type="checkbox" class="absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer peer">
+      <div class="bg-white h-12 w-full pl-5  items-center border-b-2 peer-checked:bg-gradient-to-r from-cyan-500 to-blue-500 peer-checked:text-white flex justify-between ">
+        <p class="text-lg ">{{mainCategory.section}}</p>
+      </div>
+      <div class="absolute top-3 right-3  transition-transform duration-500 rotate-0 peer-checked:rotate-180 peer-checked:text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+        </svg>
+      </div>
+      <div class="bg-white overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40 peer-checked:border-b-2">
+        <div class="p-4">
+          <div class="subCate-body ml-10 py-2" *ngFor="let subCategory of mainCategory.subSections">
+            <input type="checkbox" id="'category'+{{mainCategory.id}}+{{subCategory.catId}}" name="'category'+{{mainCategory.id}}+{{subCategory.catId}}"  value="{{mainCategory}}" (change)="onChange(mainCategory,subCategory)">
+            <label for="'category'+{{mainCategory.id}}+{{subCategory.catId}}" class="ml-2"> {{ subCategory.category }}</label><br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
