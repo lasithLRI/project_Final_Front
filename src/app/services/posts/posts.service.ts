@@ -244,11 +244,9 @@ export class PostsService{
 
   checkSelectedCategories(): Array<PostModal> {
     if (this.categoriesService.selectedCategoryArray.length !== 0) {
-      console.log('Selected categories are not empty:', this.categoriesService.selectedCategoryArray);
       this.addPostToShow();  // Update posts to display based on selected categories
       // Add any additional logic here if needed
     } else {
-      console.log('No categories selected.');
       this.addPostToShow();  // Ensure all posts are displayed if no category is selected
     }
 

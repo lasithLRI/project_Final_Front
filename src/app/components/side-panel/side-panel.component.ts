@@ -170,11 +170,6 @@ export class SidePanelComponent{
       this.categoriesService.selectedCategoryArray.push({ categoryId: category.id, subCategoryId: subCategory.subId });
     }
 
-    // this.selectedCategories.push({categoryId: category.id, subCategoryId: subCategory.catId});
-    console.log(category.id,subCategory.subId, subCategory.subCatName)
-    console.log(this.categoriesService.selectedCategoryArray)
-
-
   }
 
 }
