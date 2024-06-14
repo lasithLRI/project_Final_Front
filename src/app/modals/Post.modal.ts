@@ -1,22 +1,13 @@
-import {itemCategory} from "./categories.modal";
+import {CategoriesModal, SubCategories} from "./categories.modal";
 
 export interface PostModal{
   id:number;
   title:string;
+  location:string;
   description:string;
   shortDescription:string;
-  images:Array<Images>;
-  location:string;
   price:number;
-  category: itemCategory;
-}
-
-export interface Images{
-  id:number;
-  urls:string
-}
-
-
-export interface PostsList{
-  postList:Array<PostModal>
+  category:SubCategories
+  section:CategoriesModal;
+  contactNumbers:number[]
 }
