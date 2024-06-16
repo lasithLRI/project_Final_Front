@@ -1,7 +1,8 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {NgForOf} from "@angular/common";
-import {CategoryModal, SectionsList, SubCategories} from "../../modals/categories.modal";
+
 import {CategoriesService} from "../../services/categories/categories.service";
+import {CategoriesModal, SubCategories} from "../../modals/categories.modal";
 
 
 @Component({
@@ -14,20 +15,28 @@ import {CategoriesService} from "../../services/categories/categories.service";
   templateUrl: './side-panel.component.html',
   styleUrl: './side-panel.component.css'
 })
-export class SidePanelComponent implements OnInit{
+export class SidePanelComponent{
 
-  sectionsList: SectionsList | undefined;
   constructor(private categoriesService:CategoriesService) {
   }
 
-  ngOnInit() {
-    this.sectionsList = this.categoriesService.getSectionsList();
-  }
+  tempCategories = this.categoriesService.tempCategories
 
-  onChange(value:CategoryModal, subCategory:SubCategories){
-    this.categoriesService.setSelectedCategories(value, subCategory);
+
+  categoriesOnClick = (category: CategoriesModal, subCategory: SubCategories): void => {
+
+    const existingCategoryIndex = this.categoriesService.selectedCategoryArray.findIndex((c)=>
+      c.categoryId === category.id && c.subCategoryId === subCategory.subId
+    );
+
+    if (existingCategoryIndex > -1) {
+      // If already selected, remove it
+      this.categoriesService.selectedCategoryArray.splice(existingCategoryIndex, 1);
+    } else {
+      // If not selected, add it
+      this.categoriesService.selectedCategoryArray.push({ categoryId: category.id, subCategoryId: subCategory.subId });
+    }
+
   }
 
 }
-
-

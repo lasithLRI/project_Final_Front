@@ -1,20 +1,10 @@
-export interface CategoryModal{
+export interface CategoriesModal{
   id:number;
   section:string;
-  subSections:Array<SubCategories>;
-}
-
-export interface SectionsList{
-  sections:Array<CategoryModal>
+  subCats:Array<SubCategories>
 }
 
 export interface SubCategories{
-  catId:number;
-  category:string;
-}
-
-export interface itemCategory{
-  id:number;
-  section:string
-  subSections:SubCategories[];
+  subId:number;
+  subCatName:string;
 }

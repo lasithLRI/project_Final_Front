@@ -1,9 +1,13 @@
 import {Component, OnInit} from '@angular/core';
+
+import {CurrencyPipe, NgForOf} from "@angular/common";
+
 import {CategoriesService} from "../../services/categories/categories.service";
-import {SectionsList} from "../../modals/categories.modal";
-import {CurrencyPipe, NgForOf, NgOptimizedImage} from "@angular/common";
-import {PostsList} from "../../modals/Post.modal";
 import {PostsService} from "../../services/posts/posts.service";
+import {ProductService} from "../../services/product/product.service";
+import {ProductsComponent} from "../products/products.component";
+import {PostModal} from "../../modals/Post.modal";
+
 
 @Component({
   selector: 'app-ads-panel',
@@ -11,25 +15,26 @@ import {PostsService} from "../../services/posts/posts.service";
   imports: [
     NgForOf,
     CurrencyPipe,
-    NgOptimizedImage
+    ProductsComponent
+
   ],
   templateUrl: './ads-panel.component.html',
   styleUrl: './ads-panel.component.css'
 })
-export class AdsPanelComponent  implements OnInit{
-  postsListToDisplay:any[] = []
-  ngOnInit() {
-    this.filterPosts()
+export class AdsPanelComponent{
+
+
+
+  constructor(private postsService:PostsService, private productService:ProductService) {
+
   }
 
-  constructor(private postsService:PostsService) {
-  }
+  postsListToDisplay=this.postsService
 
-
-  filterPosts(){
-    this.postsListToDisplay = this.postsService.postsToDisplay();
-  }
-
-
+  productServiceFunction = {
+    openProduct: (post:PostModal) => {
+      this.productService.openProduct(post);
+    }
+  };
 
 }

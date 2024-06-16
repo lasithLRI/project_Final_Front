@@ -1,0 +1,32 @@
+
+
+
+<div class="w-full  overflow-visible container-fluid min-h-screen">
+  <div class="inner-layer min-h-screen">
+    <div class="form-outer">
+      <div class="text-outer">
+        <h4 class="header-text">Select the Category</h4>
+        <p class="wc-text">Welcome to Hadisi.lk!</p>
+        <hr>
+      </div>
+
+      <div class="category-List" *ngFor="let category of catList">
+        <div class="drop-outer">
+          <button class="drop-btn" id="btn-1">{{ category.section }}</button>
+          <div class="content" *ngFor="let subCat of category.subCats">
+
+              <input type="checkbox" name="'checkCategory-'+{{category.id + subCat.subId}}" id="'checkCategory-'+{{category.id + subCat.subId}}" class="ml-10">
+              <label for="'checkCategory-'+{{category.id + subCat.subId}}">{{subCat.subCatName}}</label>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="next-button">
+        <button class="next-button-1" (click)="startForm()">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+

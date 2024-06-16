@@ -1,3 +1,4 @@
+
 import {Component, OnInit} from '@angular/core';
 import {Button} from "primeng/button";
 import {DialogModule} from "primeng/dialog";
@@ -5,9 +6,13 @@ import {InputTextModule} from "primeng/inputtext";
 import {FormsModule} from "@angular/forms";
 import {PaginatorModule} from "primeng/paginator";
 
+import { Component } from '@angular/core';
+
+
 @Component({
   selector: 'app-login',
   standalone: true,
+
   imports: [
     Button,
     DialogModule,
@@ -35,5 +40,12 @@ export class LoginComponent implements OnInit{
 
   ngOnInit(): void {
   }
+
+  imports: [],
+  templateUrl: './login.component.html',
+  styleUrl: './login.component.css'
+})
+export class LoginComponent {
+
 
 }

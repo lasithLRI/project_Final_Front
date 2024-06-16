@@ -1,0 +1,42 @@
+name: Deploy Angular App
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build the project
+        run: npm run build --prod
+
+      # Example step using OIDC for authentication with a cloud provider
+      - name: Authenticate with cloud provider
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Command to authenticate using OIDC token
+          cloud-provider-cli auth --token ${{ secrets.GITHUB_TOKEN }}
+
+      # Add your deployment step here
+      - name: Deploy
+        run: |
+          # Deployment commands go here
