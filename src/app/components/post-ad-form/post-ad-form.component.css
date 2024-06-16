@@ -1,0 +1,134 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.outer-layer{
+  border: 1px solid red;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.inner-layer{
+  border: 1px solid red;
+  margin: auto;
+  margin-top: 2rem;
+  width: 80%;
+  height: auto;
+
+}
+
+.form-outer{
+  /*border: 1px solid black;*/
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.name-input{
+  /*border: 1px solid blue;*/
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.name-outer{
+  /*border: 1px solid red;*/
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.phone-address{
+  /*  border: 1px solid red;*/
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.phone-outer{
+  /*border: 1px solid darkgreen;*/
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+  margin: auto;
+}
+
+.address-outer{
+  /*border: 1px solid blueviolet;*/
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+  margin: auto;
+
+}
+
+.button-frame{
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.post-inner{
+  margin: auto;
+}
+
+.title-outer{
+  margin: auto;
+  margin-top: 2rem;
+  /*border: 1px solid red;*/
+  width: 50rem;
+}
+
+.desc-outer{
+  margin: auto;
+  margin-top: 2rem;
+  /*border: 1px solid purple;*/
+  width: 50rem;
+  height: 10rem;
+
+}
+
+.condition-inner{
+  /*border: 1px solid brown;*/
+  width: 50rem;
+  height: auto;
+  display: flex;
+}
+
+.condition-outer{
+  margin: auto;
+  margin-top: 2rem;
+  /*border: 1px solid brown;*/
+  width: 50rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.file-up-outer{
+  margin: auto;
+  margin-top: 2rem;
+  /*border:1px solid red;*/
+  width: 50rem;
+  height: auto;
+}
+
+
+.card-outer{
+  margin: auto;
+  /*border: 1px solid black;*/
+  width: 95%;
+  height: auto;
+}
