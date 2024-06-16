@@ -22,4 +22,8 @@ import {FileUploadModule} from "primeng/fileupload";
 })
 export class PostAdFormComponent {
   value: string='';
+
+  onSubmit() {
+    console.log('Form submitted..');
+  }
 }
