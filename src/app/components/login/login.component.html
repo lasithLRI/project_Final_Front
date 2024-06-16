@@ -1,1 +1,41 @@
 
+<p-button (click)="showDialog()" icon="pi pi-user" label="Login"></p-button>
+<p-dialog [(visible)]="visible">
+  <ng-template pTemplate="headless">
+    <div class="relative flex flex-column px-8 py-5 gap-4 ng-component" style="border-radius: 12px">
+
+      <button id="product-close-button" (click)="closeDialog()" class="absolute top-0 right-0 m-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <div class="form-outer">
+        <h1 class="form-h">L O G I N</h1>
+        <form class="form-layer w-auto h-auto">
+
+          <div class="email-outer flex flex-col">
+            <label class="email-outer font-bold">Email</label>
+            <input placeholder="Email" type="email" name="email" autocomplete="email" class="email-input w-auto h-10 rounded-2xl bg-gray-50 border border-gray-900 text-gray-900 text-sm" [(ngModel)]="email">
+          </div>
+
+          <div class="email-outer flex flex-col">
+            <label class="email-outer font-bold">Password</label>
+            <input placeholder="Password" type="password" name="password" class="email-input w-auto h-10 rounded-2xl bg-gray-50 border border-gray-900 text-gray-900 text-sm" [(ngModel)]="password">
+          </div>
+
+          <div class="text-end">
+            <a class="inline-block align-baseline font-bold text-sm text-black-500 hover:text-blue-800" href="#">Forgot Password?</a>
+          </div>
+
+          <div class="sign-outer">
+            <button type="button" class="text-white rounded-2xl w-full h-full bg-blue-700 hover:bg-blue-800 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none">Sign in</button>
+          </div>
+          <p class="text-center">------------------------or------------------------</p>
+          <p class="text-center hover:text-blue-600 my-3"><a href="#">register?</a></p>
+        </form>
+      </div>
+    </div>
+  </ng-template>
+</p-dialog>
+

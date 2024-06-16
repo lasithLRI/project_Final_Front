@@ -1,0 +1,79 @@
+.form-outer{
+  /*border: solid 1px blue;*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+  /*margin: auto 1rem;*/
+  /*padding: 2rem;*/
+  /*-webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);*/
+  /*-moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);*/
+  /*box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);*/
+  /*border-radius: 10%;*/
+}
+
+.form-h{
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 1000;
+}
+
+.email-outer{
+  margin-bottom: 6px;
+}
+
+.email-input{
+  padding: 10px;
+}
+
+.sign-outer{
+
+  margin: 3rem auto auto;
+  width: 80%;
+  height: 2.5rem;
+}
+
+.ng-component{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  margin: auto 1rem;
+  padding: 2rem;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  border-radius: 10%;
+}
+
+/* Container class for relative positioning */
+.relative {
+  position: relative;
+}
+
+/* Absolute positioning for the close button */
+.absolute {
+  position: absolute;
+}
+
+/* Positioning the close button at the top-right corner */
+.top-0 {
+  top: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+/* Optional margin for the close button */
+.m-2 {
+  margin: 0.5rem; /* Adjust the margin as needed */
+}
+
+/* Size for the close button icon */
+.w-6 {
+  width: 1.5rem; /* Adjust the width as needed */
+}
+
+.h-6 {
+  height: 1.5rem; /* Adjust the height as needed */
+}
