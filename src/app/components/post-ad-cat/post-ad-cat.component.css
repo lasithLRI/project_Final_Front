@@ -7,10 +7,10 @@
 .inner-layer{
   /*border: 1px solid black;*/
   width:100%;
-  height:100vh;
   display:flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .form-outer{
@@ -52,12 +52,8 @@
   background-color: white;
   cursor: pointer;
 }
-#btn-1{
-  margin-top: 3rem;
-}
-#btn-2{
-  margin-top: 3rem;
-}
+
+
 
 .content{
   display: none;

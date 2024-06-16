@@ -5,4 +5,5 @@ export const routes: Routes = [
   {path:'ads',loadComponent:()=>import('./components/ads/ads.component').then(c=>c.AdsComponent)},
   {path:'register',loadComponent:()=>import('./components/signup/signup.component').then(c=>c.SignupComponent)},
   {path:'add',loadComponent:()=>import('./components/post-ad-cat/post-ad-cat.component').then(c=>c.PostAdCatComponent)},
+  {path:'login',loadComponent:()=>import('./components/login/login.component').then(c=>c.LoginComponent)},
 ];
