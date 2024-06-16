@@ -6,7 +6,7 @@ import {InputTextModule} from "primeng/inputtext";
 import {FormsModule} from "@angular/forms";
 import {PaginatorModule} from "primeng/paginator";
 
-import { Component } from '@angular/core';
+
 
 
 @Component({
@@ -23,7 +23,7 @@ import { Component } from '@angular/core';
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
-export class LoginComponent implements OnInit{
+export class LoginComponent implements OnInit {
 
   email: string = '';
   password: string = '';
@@ -41,11 +41,6 @@ export class LoginComponent implements OnInit{
   ngOnInit(): void {
   }
 
-  imports: [],
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
-})
-export class LoginComponent {
-
-
 }
+
+
