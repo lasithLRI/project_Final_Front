@@ -10,17 +10,33 @@
         <hr>
       </div>
 
-      <div class="category-List" *ngFor="let category of catList">
-        <div class="drop-outer">
-          <button class="drop-btn" id="btn-1">{{ category.section }}</button>
-          <div class="content" *ngFor="let subCat of category.subCats">
+<!--      <div class="category-List" *ngFor="let category of catList">-->
+<!--        <div class="drop-outer">-->
+<!--          <button class="drop-btn" id="btn-1">{{ category.section }}</button>-->
+<!--          <div class="content" *ngFor="let subCat of category.subCats">-->
 
-              <input type="checkbox" name="'checkCategory-'+{{category.id + subCat.subId}}" id="'checkCategory-'+{{category.id + subCat.subId}}" class="ml-10">
-              <label for="'checkCategory-'+{{category.id + subCat.subId}}">{{subCat.subCatName}}</label>
+<!--              <input type="checkbox" name="'checkCategory-'+{{category.id + subCat.subId}}" id="'checkCategory-'+{{category.id + subCat.subId}}" class="ml-10">-->
+<!--              <label for="'checkCategory-'+{{category.id + subCat.subId}}">{{subCat.subCatName}}</label>-->
 
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+      <div class="accordion-wrapper">
+        <p-accordion [activeIndex]="0">
+          <div class="accordion-grid">
+            <p-accordionTab [header]="category.section" *ngFor="let category of catList">
+              <div class="content" *ngFor="let subCat of category.subCats">
+                <input type="checkbox" name="'checkCategory-'+{{category.id + subCat.subId}}" id="'checkCategory-'+{{category.id + subCat.subId}}" class="ml-10">
+                <label for="'checkCategory-'+{{category.id + subCat.subId}}">{{subCat.subCatName}}</label>
+              </div>
+            </p-accordionTab>
           </div>
-        </div>
+        </p-accordion>
       </div>
+
+
+
 
       <div class="next-button">
         <button class="next-button-1" (click)="startForm()">Next</button>
