@@ -1,6 +1,5 @@
-
-<p-button (click)="showDialog()" icon="pi pi-user" label="Login"></p-button>
-<p-dialog [(visible)]="visible">
+<button class="hover:bg-gray-700 hover:rounded-full flex items-center justify-center text-2xl font-bold m-2 p-2 btn-outer " (click)="showDialog()"><mat-icon >login</mat-icon></button>
+<p-dialog [(visible)]="visible" [modal]="true" [dismissableMask]="true" styleClass="custom-dialog">
   <ng-template pTemplate="headless">
     <div class="relative flex flex-column px-8 py-5 gap-4 ng-component" style="border-radius: 12px">
 
@@ -29,10 +28,10 @@
           </div>
 
           <div class="sign-outer">
-            <button type="button" class="text-white rounded-2xl w-full h-full bg-blue-700 hover:bg-blue-800 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none">Sign in</button>
+            <button type="button" class="text-white rounded-2xl w-full h-full bg-blue-700 hover:bg-blue-800 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none" (click)="login(email,password)">Sign in</button>
           </div>
           <p class="text-center">------------------------or------------------------</p>
-          <p class="text-center hover:text-blue-600 my-3"><a href="#">register?</a></p>
+          <p class="text-center hover:text-blue-600 my-3" routerLink="/register">register?</p>
         </form>
       </div>
     </div>
