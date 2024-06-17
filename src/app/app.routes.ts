@@ -7,5 +7,6 @@ export const routes: Routes = [
   {path:'add',loadComponent:()=>import('./components/post-ad-cat/post-ad-cat.component').then(c=>c.PostAdCatComponent)},
   {path:'form',loadComponent:()=>import('./components/post-ad-form/post-ad-form.component').then(c=>c.PostAdFormComponent)},
   {path:'login',loadComponent:()=>import('./components/login/login.component').then(c=>c.LoginComponent)},
+  {path:'btn',loadComponent:()=>import('./components/float-btn/float-btn.component').then(c=>c.FloatBtnComponent)},
 
 ];
