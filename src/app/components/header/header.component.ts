@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import {MatIcon} from "@angular/material/icon";
-import {RouterLink} from "@angular/router";
 import {LoginComponent} from "../login/login.component";
 
 @Component({
@@ -8,7 +7,6 @@ import {LoginComponent} from "../login/login.component";
   standalone: true,
   imports: [
     MatIcon,
-    RouterLink,
     LoginComponent
   ],
   templateUrl: './header.component.html',
