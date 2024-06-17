@@ -8,4 +8,5 @@ export const routes: Routes = [
   {path:'form',loadComponent:()=>import('./components/post-ad-form/post-ad-form.component').then(c=>c.PostAdFormComponent)},
   {path:'login',loadComponent:()=>import('./components/login/login.component').then(c=>c.LoginComponent)},
   {path:'btn',loadComponent:()=>import('./components/float-btn/float-btn.component').then(c=>c.FloatBtnComponent)},
+
 ];
