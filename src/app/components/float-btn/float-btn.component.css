@@ -1,0 +1,25 @@
+
+.btn-wrapper{
+  position: relative;
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 30px;
+  border-radius: 100%;
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: dodgerblue;
+  color: white;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.75);
+
+  transition: 0.3s ease-in-out
+}
+
+.btn-wrapper:hover{
+  background: #2169ad;
+  scale: 1.1;
+}
