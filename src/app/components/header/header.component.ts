@@ -16,4 +16,6 @@ import {RouterLink} from "@angular/router";
 })
 export class HeaderComponent {
 
+  logo: string = 'public/images/logo.png';
+
 }
