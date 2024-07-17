@@ -13,7 +13,7 @@
           <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
         </svg>
       </div>
-      <div class="bg-white overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-full peer-checked:border-b-2">
+      <div class="bg-white overflow-hidden transition-all max-h-0 peer-checked:max-h-full peer-checked:border-b-2">
         <div class="p-4">
           <div class="subCate-body ml-10 py-2" *ngFor="let subCategory of mainCategory.subCats">
             <input type="checkbox" id="'category'+{{mainCategory.id}}+{{subCategory.subId}}" name="'category'+{{mainCategory.id}}+{{subCategory.subId}}" (change)="categoriesOnClick(mainCategory,subCategory)"  value="{{mainCategory}}">
