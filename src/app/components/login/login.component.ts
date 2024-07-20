@@ -9,6 +9,7 @@ import {PaginatorModule} from "primeng/paginator";
 import {Router, RouterLink} from "@angular/router";
 import {UserService} from "../../services/user/user.service";
 import {MatIcon} from "@angular/material/icon";
+import {NgStyle} from "@angular/common";
 
 
 @Component({
@@ -23,7 +24,8 @@ import {MatIcon} from "@angular/material/icon";
     PaginatorModule,
     MatIcon,
     RouterLink,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgStyle
   ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
