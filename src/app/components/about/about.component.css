@@ -1,0 +1,36 @@
+
+.about-outer{
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.about-inner{
+  margin: auto;
+  width: 65%;
+  height: auto;
+}
+
+
+.about-title{
+  font-size: 20px;
+  font-weight: bold;
+  color: #424E74;
+}
+
+.about-desc-1{
+  font-size: 20px;
+  color: #707676;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+li {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #707676;
+}

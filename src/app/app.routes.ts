@@ -8,5 +8,6 @@ export const routes: Routes = [
   {path:'form',loadComponent:()=>import('./components/post-ad-form/post-ad-form.component').then(c=>c.PostAdFormComponent)},
   {path:'login',loadComponent:()=>import('./components/login/login.component').then(c=>c.LoginComponent)},
   {path:'home',loadComponent:()=>import('./components/home/home.component').then(c=>c.HomeComponent)},
-  {path:'contactus',loadComponent:()=>import('./components/contact-us/contact-us.component').then(c=>c.ContactUsComponent)},
+  {path:'about',loadComponent:()=>import('./components/about/about.component').then(c=>c.AboutComponent)},
+  {path:'contactus',loadComponent:()=>import('./components/contact-us/contact-us.component').then(c=>c.ContactUsComponent)}
 ];
