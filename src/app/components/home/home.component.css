@@ -12,7 +12,7 @@
 .upper-tile-outer{
   /*border: 1px solid black;*/
   height: 80%;
-  background-color: #2169ad;
+  background-image: linear-gradient(to bottom, #4e62fc, #008cff, #00a9ff, #00c1f2, #47d4e0);
   backdrop-filter: blur(5px);
   display: flex;
   align-items: center;
