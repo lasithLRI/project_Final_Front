@@ -4,6 +4,7 @@ import {NgForOf} from "@angular/common";
 import {Router} from "@angular/router";
 import {AccordionModule} from "primeng/accordion";
 import {HeaderComponent} from "../header/header.component";
+import {FooterComponent} from "../footer/footer.component";
 
 @Component({
   selector: 'app-post-ad-cat',
@@ -11,7 +12,8 @@ import {HeaderComponent} from "../header/header.component";
   imports: [
     NgForOf,
     AccordionModule,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   templateUrl: './post-ad-cat.component.html',
   styleUrl: './post-ad-cat.component.css'
