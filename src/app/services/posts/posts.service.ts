@@ -239,7 +239,6 @@ export class PostsService{
     }else{
       this.postsToDisplay = [...this.posts];
     }
-    console.log(this.postsToDisplay)
   }
 
   checkSelectedCategories(): Array<PostModal> {

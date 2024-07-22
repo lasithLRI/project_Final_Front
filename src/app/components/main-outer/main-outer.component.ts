@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import {SidePanelComponent} from "../side-panel/side-panel.component";
 import {AdsPanelComponent} from "../ads-panel/ads-panel.component";
-import {FloatBtnComponent} from "../float-btn/float-btn.component";
+
+import {FooterComponent} from "../footer/footer.component";
+
 
 @Component({
   selector: 'app-main-outer',
@@ -9,7 +11,8 @@ import {FloatBtnComponent} from "../float-btn/float-btn.component";
   imports: [
     SidePanelComponent,
     AdsPanelComponent,
-    FloatBtnComponent
+    FooterComponent
+
   ],
   templateUrl: './main-outer.component.html',
   styleUrl: './main-outer.component.css'

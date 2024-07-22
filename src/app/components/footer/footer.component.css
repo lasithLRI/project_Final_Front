@@ -1,0 +1,12 @@
+.footer-outer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  background: rgb(244 244 245);
+}
+
+.logo{
+  width: 40px;
+  height: 40px;
+}

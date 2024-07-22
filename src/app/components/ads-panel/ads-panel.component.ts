@@ -7,6 +7,7 @@ import {PostsService} from "../../services/posts/posts.service";
 import {ProductService} from "../../services/product/product.service";
 import {ProductsComponent} from "../products/products.component";
 import {PostModal} from "../../modals/Post.modal";
+import {FooterComponent} from "../footer/footer.component";
 
 
 @Component({
@@ -15,7 +16,8 @@ import {PostModal} from "../../modals/Post.modal";
   imports: [
     NgForOf,
     CurrencyPipe,
-    ProductsComponent
+    ProductsComponent,
+    FooterComponent
 
   ],
   templateUrl: './ads-panel.component.html',

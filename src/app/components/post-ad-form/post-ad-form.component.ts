@@ -5,6 +5,8 @@ import {PaginatorModule} from "primeng/paginator";
 import {ToastModule} from "primeng/toast";
 import {BadgeModule} from "primeng/badge";
 import {FileUploadModule} from "primeng/fileupload";
+import {HeaderComponent} from "../header/header.component";
+import {FooterComponent} from "../footer/footer.component";
 
 @Component({
   selector: 'app-post-ad-form',
@@ -15,7 +17,9 @@ import {FileUploadModule} from "primeng/fileupload";
     PaginatorModule,
     BadgeModule,
     ToastModule,
-    FileUploadModule
+    FileUploadModule,
+    HeaderComponent,
+    FooterComponent
   ],
   templateUrl: './post-ad-form.component.html',
   styleUrl: './post-ad-form.component.css'

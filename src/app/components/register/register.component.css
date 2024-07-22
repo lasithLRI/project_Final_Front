@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.main-outer{
+  border: solid 2px red;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sec-out{
+  /*border: solid 1px black;*/
+  margin: 2rem auto auto;
+  display: flex;
+  height: 90%;
+  width: 90%;
+}
+
+.content-outer{
+  /*border: solid 1px yellow;*/
+  align-content: center;
+  width: 50%;
+  height: 100%;
+  padding: 2rem;
+}
+
+.para-outer{
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: justify;
+  line-height: 2rem;
+  letter-spacing: 2px;
+
+}
+
+.h-outer{
+  padding-bottom: 1rem;
+  font-size: 28px;
+  font-family: "Sanchez", serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.img-outer{
+  border: 1px solid black;
+  border-radius: 100%;
+  height: 60%;
+  margin: auto;
+}
+
+.main-outer-form{
+  width: 50%;
+  height: 100%;
+}
+
+.form-outer{
+  /*border: solid 1px blue;*/
+  width: 60%;
+  height: 70%;
+  margin: auto;
+  padding: 2rem;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  border-radius: 10%;
+}
+
+.logo-form{
+  /*border: solid 1px darkblue;*/
+  display: flex;
+  width: 20%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.logo{
+  width: 40px;
+  height: 40px;
+  /*margin: auto;*/
+}
+
+.form-h{
+  /*text-align: center;*/
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 1000;
+}
+
+.reg-outer{
+  /*border: 1px solid red;*/
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.email-outer{
+  margin-bottom: 6px;
+}
+
+.email-input{
+  padding: 10px;
+}
+
+
+.sign-outer{
+  margin: 3rem auto auto;
+  width: 80%;
+  height: 2.5rem;
+}
+
+

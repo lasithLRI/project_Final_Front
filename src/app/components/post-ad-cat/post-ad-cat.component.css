@@ -2,10 +2,11 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+  overflow: hidden;
+
 }
 
 .inner-layer{
-  border: 1px solid black;
   width:100%;
   display:flex;
   justify-content: center;
@@ -14,15 +15,12 @@
 }
 
 .form-outer{
-  border: 1px solid black;
-  padding: 3rem;
-  width: 90%;
-  height: auto;
+  padding: 2rem;
+  width: 60%;
+  height: 90%;
   display: block;
-  -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
-
+  border-radius: 20px;
+  border: 1px solid rgb(148 163 184);
 }
 
 .header-text{
@@ -42,12 +40,14 @@
 .accordion-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 1rem; /* Adjust the gap between columns as needed */
+  gap: 2rem; /* Adjust the gap between columns as needed */
   width: 100%;
+  /*border: 1px solid red;*/
 }
 
 .accordion-grid p-accordionTab {
   width: 100%;
+  /*border: 1px solid red;*/
 }
 
 
